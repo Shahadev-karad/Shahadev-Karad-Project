@@ -20,6 +20,7 @@ function loadFlag(element){
         }
     }
 }
+
 window.addEventListener("load", ()=>{
     getExchangeRate();
 });
