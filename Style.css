@@ -1,0 +1,243 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  display:-webkit-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #084b71;
+  
+}
+::selection{
+  color: white;
+  background: #054874;
+}
+.wrapper{
+  width: 550px;
+  padding: 30px;
+  border-radius: 7px;
+  background: #0e8fb0;
+  box-shadow: 7px 7px 50px white;
+  /* animation: Movie 35s infinite; */
+  transition: transform .2s;
+}
+.wrapper:hover{
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+
+.wrapper header{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form{
+  margin: 40px 0 30px 0;
+}
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  background-color: rgba(245, 245, 245, 0.954);
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+form input:focus{
+  padding: 0 14px;
+  border: 2px solid #4b0853;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 170px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid white;
+}
+.select-box img{
+  max-width: 21px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  cursor: pointer;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #fff;
+
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.drop-list .icon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+}
+form .exchange-rate{
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+form button{
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #063e69;
+  transition: 0.3s ease;
+}
+form button:hover{
+  background: #043756;
+}
+
+
+@media(max-width:399px) {
+  .wrapper{
+    padding: 2rem;
+    min-height: 45vh;
+    width: 40vh;
+  }
+  .drop-list .select-box{
+    display: flex;
+    width: 85px;
+    height: 45px;
+  }
+  .wrapper header{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .select-box img{
+    max-width: 15px;
+  }
+  .select-box select{
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+    cursor: pointer;
+  }
+
+}
+
+@media(max-width:650px) {
+  .wrapper{
+    width: 345px;
+    padding: 30px;
+    height: 450px;
+  }
+  .wrapper header{
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+  
+  }
+  .drop-list .select-box{
+    display: flex;
+    width: 95px;
+    height: 45px;
+  }
+
+  @media(max-width:399px) {
+    .wrapper{
+      padding: 1.6rem;
+      height: auto;
+      width: 40vh;
+    }
+    .drop-list .select-box{
+      display: flex;
+      width: 85px;
+      height: 45px;
+    }
+    .wrapper header{
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+    form .drop-list{
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .select-box img{
+      max-width: 15px;
+    }
+    .select-box select{
+      width: auto;
+      font-size: 16px;
+      background: none;
+      margin: 0 -5px 0 5px;
+      cursor: pointer;
+    }
+  
+  }
+
+
+
+
+}
+/* @keyframes Moving {
+  0%{
+      transform:translateY(0) ;
+  }
+  50%{
+      transform: translateY(-20%);
+  }
+  100%{
+      transform: translateY(0%);
+  }
+  
+}
+
+@keyframes Movie {
+  0%{
+      transform:translateX(0) ;
+  }
+  50%{
+      transform: translateX(-20%);
+  }
+  100%{
+      transform: translateX(0%);
+  }
+  
+} */
+
